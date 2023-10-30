@@ -26,11 +26,11 @@ class Ship {
 //}
 	
 
-const myShips = new Ship ('Alpha', 20, 5, 0.7);
+const myShip = new Ship ('Alpha', 20, 5, 0.7);
 console.log(myShip);
 
 const alienShips=['A1','A2','A3','A4','A5','A6']
-console.log(alienShip);
+console.log(alienShips);
 
 //const btnEl = document.querySelector('button')
 //console.log(btnEl);
@@ -40,7 +40,7 @@ console.log(alienShip);
 //console.log(enemyShip);
 const enemyShips=[];
 for (let i=0;i<6;i++){
-     enemyShips[i]=new Ship(alienShip[i],getRandomIntInclusive(3,6),getRandomIntInclusive(2,4),decimalRandom(0.6,0.8))
+     enemyShips[i]=new Ship(alienShips[i],getRandomIntInclusive(3,6),getRandomIntInclusive(2,4),decimalRandom(0.6,0.8))
 }
 console.log (enemyShips)
 // Battle Starts
@@ -97,13 +97,13 @@ console.log('Game Begins');
 
 //Define Alpha Ship
 
-let myShip=new Ship('Alpha', '20', '5', '0.7');
-console.log(myShip);
+//let myShip=new Ship('Alpha', '20', '5', '0.7');
+//console.log(myShip);
 
 //Alien Ships
 
-const alienShip=['A1','A2','A3','A4','A5','A6']
-console.log(alienShip);
+//const alienShip=['A1','A2','A3','A4','A5','A6']
+//console.log(alienShip);
 
 
 document.write('Game begins...')
@@ -128,7 +128,7 @@ function mainProcess()
 
 
 
-    let enemyShip=new Ship(alienShip[i],getRandomIntInclusive(3,6),getRandomIntInclusive(2,4),decimalRandom(0.6,0.8))
+    let enemyShip=new Ship(alienShips[i],getRandomIntInclusive(3,6),getRandomIntInclusive(2,4),decimalRandom(0.6,0.8))
        
     textout.innerHTML += 'AlienShip ' + enemyShip.name + ' is loaded...' + '<br>'
     console.log("Before Attack")
